@@ -1,9 +1,7 @@
-import { Head } from '@inertiajs/react';
-
 export default function Welcome() {
     return (
         <>
-            <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+            <div className="box-content border-4">
                 <input type="text" placeholder="Type here" className="input input-lg" />
             </div>
             <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
@@ -14,9 +12,11 @@ export default function Welcome() {
             </div>
             <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                 <div>
-                    <div>//Bild</div>
-                    <div>//Titel och plats</div>
-                    <div>//Pris och leverans</div>
+                    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                        <div>Bild</div>
+                        <div>Titel och plats</div>
+                        <div>Pris och leverans</div>
+                    </div>
                 </div>
             </div>
         </>
