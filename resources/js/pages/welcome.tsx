@@ -1,7 +1,7 @@
 export default function Welcome() {
     return (
         <>
-            <div className="box-content border-4">
+            <div>
                 <input type="text" placeholder="Type here" className="input input-lg" />
             </div>
             <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
