@@ -1,5 +1,4 @@
 <x-layout title='Home page'>
-    @if (count($ads))
     <div>
         <h2>Annonser</h2>
         <ul>
@@ -8,5 +7,4 @@
             @endforeach
         </ul>
     </div>
-    @endif
 </x-layout>

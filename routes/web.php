@@ -7,12 +7,8 @@ Route::get('/', function () {
 });
 
 Route::get('/home', function () {
-    return view('homepage');
-});
-
-Route::get('/newad', function () {
-    $ads = session()->get('ads', []);
-    return view('ads', [
+    $ads = session()->get('ads', ['None exist']);
+    return view('homepage', [
         'ads' => $ads,
     ]);
 });
@@ -21,6 +17,7 @@ Route::post('/newad', function () {
     $ad = request('ad');
 
     session()->push('ads', $ad);
+    //dd(session('ads'));
 
     return redirect('/home');
 });
