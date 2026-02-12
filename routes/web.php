@@ -13,6 +13,10 @@ Route::get('/home', function () {
     ]);
 });
 
+Route::get('/newad', function () {
+    return view('newad');
+});
+
 Route::post('/newad', function () {
     $ad = request('ad');
 
